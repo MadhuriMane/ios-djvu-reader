@@ -1,0 +1,663 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ED02F69F15276198001AF533 /* libLibDjvu.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ED02F69E15276176001AF533 /* libLibDjvu.a */; };
+		ED2198FD14E6C71900CF25CD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED2198FC14E6C71900CF25CD /* UIKit.framework */; };
+		ED2198FF14E6C71900CF25CD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED2198FE14E6C71900CF25CD /* Foundation.framework */; };
+		ED21990114E6C71900CF25CD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED21990014E6C71900CF25CD /* CoreGraphics.framework */; };
+		ED21990914E6C71900CF25CD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ED21990814E6C71900CF25CD /* main.m */; };
+		ED38A9C61503CF7A001E5654 /* DRBookScrollViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = ED38A9C51503CF7A001E5654 /* DRBookScrollViewDataSource.m */; };
+		ED5CA46214F031CF005187D3 /* DRCachedBooksService.m in Sources */ = {isa = PBXBuildFile; fileRef = ED5CA46114F031CF005187D3 /* DRCachedBooksService.m */; };
+		ED7DEB7B14F690B70045CC3B /* NSMutableArray+MoveObject.m in Sources */ = {isa = PBXBuildFile; fileRef = ED7DEB7A14F690B70045CC3B /* NSMutableArray+MoveObject.m */; };
+		ED80E81315308EC5006870B5 /* DRBooksBrowserService.m in Sources */ = {isa = PBXBuildFile; fileRef = ED80E81115308EC5006870B5 /* DRBooksBrowserService.m */; };
+		ED84A29514EC23FF00BD76AE /* DRBooksBrowserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED84A29314EC23FF00BD76AE /* DRBooksBrowserViewController.xib */; };
+		ED84A29E14EC254A00BD76AE /* DRBook.m in Sources */ = {isa = PBXBuildFile; fileRef = ED84A29D14EC254A00BD76AE /* DRBook.m */; };
+		ED84A2A914EC31B000BD76AE /* DRThemeInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = ED84A2A814EC31B000BD76AE /* DRThemeInfo.m */; };
+		ED84A2AC14EC381500BD76AE /* book_default.png in Resources */ = {isa = PBXBuildFile; fileRef = ED84A2AB14EC381500BD76AE /* book_default.png */; };
+		ED84F7E414E993210005E732 /* MADjvuParser.mm in Sources */ = {isa = PBXBuildFile; fileRef = ED84F7E314E993210005E732 /* MADjvuParser.mm */; };
+		ED84F7E914E996310005E732 /* NSString+UUID.m in Sources */ = {isa = PBXBuildFile; fileRef = ED84F7E814E996310005E732 /* NSString+UUID.m */; };
+		EDAAAD0C1503A88200DA117C /* DRImageScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = EDAAAD0B1503A88200DA117C /* DRImageScrollView.m */; };
+		EDD246AF14EA7ADA00B60A21 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EDD246AB14EA7ADA00B60A21 /* InfoPlist.strings */; };
+		EDD246B014EA7ADA00B60A21 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDD246AD14EA7ADA00B60A21 /* MainStoryboard.storyboard */; };
+		EDD246B314EA7B7000B60A21 /* DRMainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDD246B114EA7B7000B60A21 /* DRMainWindow.xib */; };
+		EDD246B614EA815B00B60A21 /* DRBookViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDD246B414EA815B00B60A21 /* DRBookViewController.xib */; };
+		EDD2759D14F6A5A9006DAC8E /* MAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EDD2759C14F6A5A9006DAC8E /* MAAppDelegate.m */; };
+		EDD275A414F6AFA1006DAC8E /* DRBooksBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDD275A314F6AFA1006DAC8E /* DRBooksBrowserViewController.m */; };
+		EDD5FF451508E6AD00B4F478 /* DRScrollListView.m in Sources */ = {isa = PBXBuildFile; fileRef = EDD5FF441508E6AD00B4F478 /* DRScrollListView.m */; };
+		EDD8E03614F6B76F00D809FC /* DRBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDD8E03514F6B76F00D809FC /* DRBookViewController.m */; };
+		EDE36E6514FA6D5300FB62B2 /* CULoggingUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = EDE36E6414FA6D5300FB62B2 /* CULoggingUtils.m */; };
+		EDE60D2014ED6D56005E3BFA /* DRCachedBooks.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EDE60D1E14ED6D56005E3BFA /* DRCachedBooks.xcdatamodeld */; };
+		EDE60D2614ED6FA5005E3BFA /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDE60D2514ED6FA5005E3BFA /* CoreData.framework */; };
+		EDE60D3014ED7419005E3BFA /* CUSpecialFolders.m in Sources */ = {isa = PBXBuildFile; fileRef = EDE60D2F14ED7419005E3BFA /* CUSpecialFolders.m */; };
+		EDE60D3314ED7B70005E3BFA /* DRBooksThumbnailer.m in Sources */ = {isa = PBXBuildFile; fileRef = EDE60D3214ED7B70005E3BFA /* DRBooksThumbnailer.m */; };
+		EDE60D3914ED8473005E3BFA /* DRDjvuThumbnailerTask.m in Sources */ = {isa = PBXBuildFile; fileRef = EDE60D3814ED8473005E3BFA /* DRDjvuThumbnailerTask.m */; };
+		EDEF20BB14F57DFE00759F56 /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = EDEF20BA14F57DFE00759F56 /* NSString+MD5.m */; };
+		EDEF20C114F5801800759F56 /* DRCachedBook.m in Sources */ = {isa = PBXBuildFile; fileRef = EDEF20C014F5801800759F56 /* DRCachedBook.m */; };
+		EDF71BE214F9504E007C2137 /* DRMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDF71BE114F9504E007C2137 /* DRMainViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ED02F69D15276176001AF533 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ED02F69615276176001AF533 /* LibDjvu.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = ED2197F814E6C33D00CF25CD;
+			remoteInfo = LibDjvu;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		ED02F69615276176001AF533 /* LibDjvu.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = LibDjvu.xcodeproj; path = "External/djvulibre-3.5.24/ios/LibDjvu.xcodeproj"; sourceTree = "<group>"; };
+		ED2198F814E6C71900CF25CD /* DjvuViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DjvuViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED2198FC14E6C71900CF25CD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		ED2198FE14E6C71900CF25CD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		ED21990014E6C71900CF25CD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		ED21990414E6C71900CF25CD /* DjvuViewer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DjvuViewer-Info.plist"; sourceTree = "<group>"; };
+		ED21990814E6C71900CF25CD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		ED21990A14E6C71900CF25CD /* DjvuViewer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DjvuViewer-Prefix.pch"; sourceTree = "<group>"; };
+		ED38A9C41503CF7A001E5654 /* DRBookScrollViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRBookScrollViewDataSource.h; sourceTree = "<group>"; };
+		ED38A9C51503CF7A001E5654 /* DRBookScrollViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRBookScrollViewDataSource.m; sourceTree = "<group>"; };
+		ED5CA46014F031CF005187D3 /* DRCachedBooksService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRCachedBooksService.h; sourceTree = "<group>"; };
+		ED5CA46114F031CF005187D3 /* DRCachedBooksService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRCachedBooksService.m; sourceTree = "<group>"; };
+		ED7DEB7914F690B70045CC3B /* NSMutableArray+MoveObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+MoveObject.h"; sourceTree = "<group>"; };
+		ED7DEB7A14F690B70045CC3B /* NSMutableArray+MoveObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+MoveObject.m"; sourceTree = "<group>"; };
+		ED80E81015308EC5006870B5 /* DRBooksBrowserService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRBooksBrowserService.h; sourceTree = "<group>"; };
+		ED80E81115308EC5006870B5 /* DRBooksBrowserService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRBooksBrowserService.m; sourceTree = "<group>"; };
+		ED80E81215308EC5006870B5 /* DRBooksBrowserServiceDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRBooksBrowserServiceDelegate.h; sourceTree = "<group>"; };
+		ED84A29414EC23FF00BD76AE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DRBooksBrowserViewController.xib; sourceTree = "<group>"; };
+		ED84A29C14EC254A00BD76AE /* DRBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRBook.h; sourceTree = "<group>"; };
+		ED84A29D14EC254A00BD76AE /* DRBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRBook.m; sourceTree = "<group>"; };
+		ED84A2A714EC31B000BD76AE /* DRThemeInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRThemeInfo.h; sourceTree = "<group>"; };
+		ED84A2A814EC31B000BD76AE /* DRThemeInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRThemeInfo.m; sourceTree = "<group>"; };
+		ED84A2AB14EC381500BD76AE /* book_default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = book_default.png; sourceTree = "<group>"; };
+		ED84F7E214E993210005E732 /* MADjvuParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MADjvuParser.h; sourceTree = "<group>"; };
+		ED84F7E314E993210005E732 /* MADjvuParser.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MADjvuParser.mm; sourceTree = "<group>"; };
+		ED84F7E714E996310005E732 /* NSString+UUID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+UUID.h"; sourceTree = "<group>"; };
+		ED84F7E814E996310005E732 /* NSString+UUID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+UUID.m"; sourceTree = "<group>"; };
+		EDAAAD0A1503A88200DA117C /* DRImageScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRImageScrollView.h; sourceTree = "<group>"; };
+		EDAAAD0B1503A88200DA117C /* DRImageScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRImageScrollView.m; sourceTree = "<group>"; };
+		EDD246AC14EA7ADA00B60A21 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EDD246AE14EA7ADA00B60A21 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		EDD246B214EA7B7000B60A21 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DRMainWindow.xib; sourceTree = "<group>"; };
+		EDD246B514EA815B00B60A21 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DRBookViewController.xib; sourceTree = "<group>"; };
+		EDD2759B14F6A5A9006DAC8E /* MAAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAAppDelegate.h; sourceTree = "<group>"; };
+		EDD2759C14F6A5A9006DAC8E /* MAAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAAppDelegate.m; sourceTree = "<group>"; };
+		EDD2759E14F6AA7E006DAC8E /* CUSafeRelease.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CUSafeRelease.h; sourceTree = "<group>"; };
+		EDD275A214F6AFA1006DAC8E /* DRBooksBrowserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRBooksBrowserViewController.h; sourceTree = "<group>"; };
+		EDD275A314F6AFA1006DAC8E /* DRBooksBrowserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRBooksBrowserViewController.m; sourceTree = "<group>"; };
+		EDD275A514F6B007006DAC8E /* DRBooksBrowserControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRBooksBrowserControllerDelegate.h; sourceTree = "<group>"; };
+		EDD5FF431508E6AD00B4F478 /* DRScrollListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRScrollListView.h; sourceTree = "<group>"; };
+		EDD5FF441508E6AD00B4F478 /* DRScrollListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRScrollListView.m; sourceTree = "<group>"; };
+		EDD5FF461508E7C600B4F478 /* DRScrollListViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRScrollListViewDelegate.h; sourceTree = "<group>"; };
+		EDD5FF471508EE5C00B4F478 /* DRScrollListViewItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRScrollListViewItem.h; sourceTree = "<group>"; };
+		EDD8E03414F6B76F00D809FC /* DRBookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRBookViewController.h; sourceTree = "<group>"; };
+		EDD8E03514F6B76F00D809FC /* DRBookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRBookViewController.m; sourceTree = "<group>"; };
+		EDD8E03714F6BB8D00D809FC /* DRBookViewControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRBookViewControllerDelegate.h; sourceTree = "<group>"; };
+		EDE36E6314FA6D5300FB62B2 /* CULoggingUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CULoggingUtils.h; sourceTree = "<group>"; };
+		EDE36E6414FA6D5300FB62B2 /* CULoggingUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CULoggingUtils.m; sourceTree = "<group>"; };
+		EDE36E6714FA863D00FB62B2 /* CUCodeProfiling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CUCodeProfiling.h; sourceTree = "<group>"; };
+		EDE60D1F14ED6D56005E3BFA /* DRCachedBooks.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DRCachedBooks.xcdatamodel; sourceTree = "<group>"; };
+		EDE60D2514ED6FA5005E3BFA /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		EDE60D2E14ED7419005E3BFA /* CUSpecialFolders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CUSpecialFolders.h; sourceTree = "<group>"; };
+		EDE60D2F14ED7419005E3BFA /* CUSpecialFolders.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CUSpecialFolders.m; sourceTree = "<group>"; };
+		EDE60D3114ED7B6F005E3BFA /* DRBooksThumbnailer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRBooksThumbnailer.h; sourceTree = "<group>"; };
+		EDE60D3214ED7B70005E3BFA /* DRBooksThumbnailer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRBooksThumbnailer.m; sourceTree = "<group>"; };
+		EDE60D3414ED7B85005E3BFA /* DRBooksThumbnailerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRBooksThumbnailerDelegate.h; sourceTree = "<group>"; };
+		EDE60D3714ED8473005E3BFA /* DRDjvuThumbnailerTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRDjvuThumbnailerTask.h; sourceTree = "<group>"; };
+		EDE60D3814ED8473005E3BFA /* DRDjvuThumbnailerTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRDjvuThumbnailerTask.m; sourceTree = "<group>"; };
+		EDE60D3A14ED8615005E3BFA /* DRDjvuThumbnailerTaskDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRDjvuThumbnailerTaskDelegate.h; sourceTree = "<group>"; };
+		EDEF20B914F57DFE00759F56 /* NSString+MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5.h"; sourceTree = "<group>"; };
+		EDEF20BA14F57DFE00759F56 /* NSString+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5.m"; sourceTree = "<group>"; };
+		EDEF20BF14F5801800759F56 /* DRCachedBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRCachedBook.h; sourceTree = "<group>"; };
+		EDEF20C014F5801800759F56 /* DRCachedBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRCachedBook.m; sourceTree = "<group>"; };
+		EDF71BE014F9504E007C2137 /* DRMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRMainViewController.h; sourceTree = "<group>"; };
+		EDF71BE114F9504E007C2137 /* DRMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRMainViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ED2198F514E6C71900CF25CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED02F69F15276198001AF533 /* libLibDjvu.a in Frameworks */,
+				EDE60D2614ED6FA5005E3BFA /* CoreData.framework in Frameworks */,
+				ED2198FD14E6C71900CF25CD /* UIKit.framework in Frameworks */,
+				ED2198FF14E6C71900CF25CD /* Foundation.framework in Frameworks */,
+				ED21990114E6C71900CF25CD /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ED02F6931527614A001AF533 /* External */ = {
+			isa = PBXGroup;
+			children = (
+				ED02F69515276159001AF533 /* djvulibre */,
+			);
+			name = External;
+			sourceTree = "<group>";
+		};
+		ED02F69515276159001AF533 /* djvulibre */ = {
+			isa = PBXGroup;
+			children = (
+				ED02F69615276176001AF533 /* LibDjvu.xcodeproj */,
+			);
+			name = djvulibre;
+			sourceTree = "<group>";
+		};
+		ED02F69715276176001AF533 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ED02F69E15276176001AF533 /* libLibDjvu.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ED2198ED14E6C71900CF25CD = {
+			isa = PBXGroup;
+			children = (
+				ED02F6931527614A001AF533 /* External */,
+				EDDD561614E6CD8E00FBAF89 /* Resources */,
+				ED21990214E6C71900CF25CD /* DjvuViewer */,
+				ED2198FB14E6C71900CF25CD /* Frameworks */,
+				EDE60D2514ED6FA5005E3BFA /* CoreData.framework */,
+				ED2198F914E6C71900CF25CD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ED2198F914E6C71900CF25CD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ED2198F814E6C71900CF25CD /* DjvuViewer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ED2198FB14E6C71900CF25CD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ED2198FC14E6C71900CF25CD /* UIKit.framework */,
+				ED2198FE14E6C71900CF25CD /* Foundation.framework */,
+				ED21990014E6C71900CF25CD /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ED21990214E6C71900CF25CD /* DjvuViewer */ = {
+			isa = PBXGroup;
+			children = (
+				ED88012E14F6A462004B3386 /* Controllers */,
+				EDE60D2A14ED712F005E3BFA /* Services */,
+				ED84A2A614EC319D00BD76AE /* Views */,
+				EDD246AA14EA7ADA00B60A21 /* Resources */,
+				ED84F7E514E9960B0005E732 /* Utilites */,
+				ED84F7E014E992DF0005E732 /* Model */,
+				ED21990314E6C71900CF25CD /* Supporting Files */,
+			);
+			path = DjvuViewer;
+			sourceTree = "<group>";
+		};
+		ED21990314E6C71900CF25CD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				ED21990414E6C71900CF25CD /* DjvuViewer-Info.plist */,
+				ED21990814E6C71900CF25CD /* main.m */,
+				ED21990A14E6C71900CF25CD /* DjvuViewer-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ED80E80F15308EC5006870B5 /* BooksBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				ED80E81015308EC5006870B5 /* DRBooksBrowserService.h */,
+				ED80E81115308EC5006870B5 /* DRBooksBrowserService.m */,
+				ED80E81215308EC5006870B5 /* DRBooksBrowserServiceDelegate.h */,
+			);
+			path = BooksBrowser;
+			sourceTree = "<group>";
+		};
+		ED84A2A614EC319D00BD76AE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EDD5FF411508E5B400B4F478 /* CustomViews */,
+				EDAAAD081503A80300DA117C /* ImageScrollView */,
+				ED84A2A714EC31B000BD76AE /* DRThemeInfo.h */,
+				ED84A2A814EC31B000BD76AE /* DRThemeInfo.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		ED84A2AA14EC381500BD76AE /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				ED84A2AB14EC381500BD76AE /* book_default.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		ED84F7E014E992DF0005E732 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				ED80E80F15308EC5006870B5 /* BooksBrowser */,
+				ED84F7E214E993210005E732 /* MADjvuParser.h */,
+				ED84F7E314E993210005E732 /* MADjvuParser.mm */,
+				ED84A29C14EC254A00BD76AE /* DRBook.h */,
+				ED84A29D14EC254A00BD76AE /* DRBook.m */,
+				EDE60D1E14ED6D56005E3BFA /* DRCachedBooks.xcdatamodeld */,
+				EDEF20BF14F5801800759F56 /* DRCachedBook.h */,
+				EDEF20C014F5801800759F56 /* DRCachedBook.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		ED84F7E514E9960B0005E732 /* Utilites */ = {
+			isa = PBXGroup;
+			children = (
+				ED84F7E614E9960B0005E732 /* Common */,
+			);
+			path = Utilites;
+			sourceTree = "<group>";
+		};
+		ED84F7E614E9960B0005E732 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				ED84F7E714E996310005E732 /* NSString+UUID.h */,
+				ED84F7E814E996310005E732 /* NSString+UUID.m */,
+				EDE60D2E14ED7419005E3BFA /* CUSpecialFolders.h */,
+				EDE60D2F14ED7419005E3BFA /* CUSpecialFolders.m */,
+				EDEF20B914F57DFE00759F56 /* NSString+MD5.h */,
+				EDEF20BA14F57DFE00759F56 /* NSString+MD5.m */,
+				ED7DEB7914F690B70045CC3B /* NSMutableArray+MoveObject.h */,
+				ED7DEB7A14F690B70045CC3B /* NSMutableArray+MoveObject.m */,
+				EDD2759E14F6AA7E006DAC8E /* CUSafeRelease.h */,
+				EDE36E6314FA6D5300FB62B2 /* CULoggingUtils.h */,
+				EDE36E6414FA6D5300FB62B2 /* CULoggingUtils.m */,
+				EDE36E6714FA863D00FB62B2 /* CUCodeProfiling.h */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		ED88012E14F6A462004B3386 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EDF71BDF14F9504E007C2137 /* MainView */,
+				EDD8E03314F6B76F00D809FC /* BookView */,
+				EDD275A114F6AFA1006DAC8E /* BooksBrowser */,
+				EDD2759A14F6A5A9006DAC8E /* AppDelegate */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		EDAAAD081503A80300DA117C /* ImageScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				EDAAAD0A1503A88200DA117C /* DRImageScrollView.h */,
+				EDAAAD0B1503A88200DA117C /* DRImageScrollView.m */,
+			);
+			path = ImageScrollView;
+			sourceTree = "<group>";
+		};
+		EDD246AA14EA7ADA00B60A21 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				ED84A2AA14EC381500BD76AE /* Images */,
+				EDD246AB14EA7ADA00B60A21 /* InfoPlist.strings */,
+				EDD246AD14EA7ADA00B60A21 /* MainStoryboard.storyboard */,
+				EDD246B114EA7B7000B60A21 /* DRMainWindow.xib */,
+				EDD246B414EA815B00B60A21 /* DRBookViewController.xib */,
+				ED84A29314EC23FF00BD76AE /* DRBooksBrowserViewController.xib */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		EDD2759A14F6A5A9006DAC8E /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				EDD2759B14F6A5A9006DAC8E /* MAAppDelegate.h */,
+				EDD2759C14F6A5A9006DAC8E /* MAAppDelegate.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		EDD275A114F6AFA1006DAC8E /* BooksBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				EDD275A214F6AFA1006DAC8E /* DRBooksBrowserViewController.h */,
+				EDD275A314F6AFA1006DAC8E /* DRBooksBrowserViewController.m */,
+				EDD275A514F6B007006DAC8E /* DRBooksBrowserControllerDelegate.h */,
+			);
+			path = BooksBrowser;
+			sourceTree = "<group>";
+		};
+		EDD5FF411508E5B400B4F478 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				EDD5FF431508E6AD00B4F478 /* DRScrollListView.h */,
+				EDD5FF441508E6AD00B4F478 /* DRScrollListView.m */,
+				EDD5FF461508E7C600B4F478 /* DRScrollListViewDelegate.h */,
+				EDD5FF471508EE5C00B4F478 /* DRScrollListViewItem.h */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		EDD8E03314F6B76F00D809FC /* BookView */ = {
+			isa = PBXGroup;
+			children = (
+				EDD8E03414F6B76F00D809FC /* DRBookViewController.h */,
+				EDD8E03514F6B76F00D809FC /* DRBookViewController.m */,
+				EDD8E03714F6BB8D00D809FC /* DRBookViewControllerDelegate.h */,
+				ED38A9C41503CF7A001E5654 /* DRBookScrollViewDataSource.h */,
+				ED38A9C51503CF7A001E5654 /* DRBookScrollViewDataSource.m */,
+			);
+			path = BookView;
+			sourceTree = "<group>";
+		};
+		EDDD561614E6CD8E00FBAF89 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		EDE60D2A14ED712F005E3BFA /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				EDE60D3114ED7B6F005E3BFA /* DRBooksThumbnailer.h */,
+				EDE60D3214ED7B70005E3BFA /* DRBooksThumbnailer.m */,
+				EDE60D3414ED7B85005E3BFA /* DRBooksThumbnailerDelegate.h */,
+				EDE60D3714ED8473005E3BFA /* DRDjvuThumbnailerTask.h */,
+				EDE60D3814ED8473005E3BFA /* DRDjvuThumbnailerTask.m */,
+				EDE60D3A14ED8615005E3BFA /* DRDjvuThumbnailerTaskDelegate.h */,
+				ED5CA46014F031CF005187D3 /* DRCachedBooksService.h */,
+				ED5CA46114F031CF005187D3 /* DRCachedBooksService.m */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		EDF71BDF14F9504E007C2137 /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				EDF71BE014F9504E007C2137 /* DRMainViewController.h */,
+				EDF71BE114F9504E007C2137 /* DRMainViewController.m */,
+			);
+			path = MainView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ED2198F714E6C71900CF25CD /* DjvuViewer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED21991614E6C71A00CF25CD /* Build configuration list for PBXNativeTarget "DjvuViewer" */;
+			buildPhases = (
+				ED2198F414E6C71900CF25CD /* Sources */,
+				ED2198F514E6C71900CF25CD /* Frameworks */,
+				ED2198F614E6C71900CF25CD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DjvuViewer;
+			productName = DjvuViewer;
+			productReference = ED2198F814E6C71900CF25CD /* DjvuViewer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ED2198EF14E6C71900CF25CD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = ED2198F214E6C71900CF25CD /* Build configuration list for PBXProject "DjvuViewer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = ED2198ED14E6C71900CF25CD;
+			productRefGroup = ED2198F914E6C71900CF25CD /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = ED02F69715276176001AF533 /* Products */;
+					ProjectRef = ED02F69615276176001AF533 /* LibDjvu.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				ED2198F714E6C71900CF25CD /* DjvuViewer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		ED02F69E15276176001AF533 /* libLibDjvu.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libLibDjvu.a;
+			remoteRef = ED02F69D15276176001AF533 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ED2198F614E6C71900CF25CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDD246AF14EA7ADA00B60A21 /* InfoPlist.strings in Resources */,
+				EDD246B014EA7ADA00B60A21 /* MainStoryboard.storyboard in Resources */,
+				EDD246B314EA7B7000B60A21 /* DRMainWindow.xib in Resources */,
+				EDD246B614EA815B00B60A21 /* DRBookViewController.xib in Resources */,
+				ED84A29514EC23FF00BD76AE /* DRBooksBrowserViewController.xib in Resources */,
+				ED84A2AC14EC381500BD76AE /* book_default.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ED2198F414E6C71900CF25CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED21990914E6C71900CF25CD /* main.m in Sources */,
+				ED84F7E414E993210005E732 /* MADjvuParser.mm in Sources */,
+				ED84F7E914E996310005E732 /* NSString+UUID.m in Sources */,
+				ED84A29E14EC254A00BD76AE /* DRBook.m in Sources */,
+				ED84A2A914EC31B000BD76AE /* DRThemeInfo.m in Sources */,
+				EDE60D2014ED6D56005E3BFA /* DRCachedBooks.xcdatamodeld in Sources */,
+				EDE60D3014ED7419005E3BFA /* CUSpecialFolders.m in Sources */,
+				EDE60D3314ED7B70005E3BFA /* DRBooksThumbnailer.m in Sources */,
+				EDE60D3914ED8473005E3BFA /* DRDjvuThumbnailerTask.m in Sources */,
+				ED5CA46214F031CF005187D3 /* DRCachedBooksService.m in Sources */,
+				EDEF20BB14F57DFE00759F56 /* NSString+MD5.m in Sources */,
+				EDEF20C114F5801800759F56 /* DRCachedBook.m in Sources */,
+				ED7DEB7B14F690B70045CC3B /* NSMutableArray+MoveObject.m in Sources */,
+				EDD2759D14F6A5A9006DAC8E /* MAAppDelegate.m in Sources */,
+				EDD275A414F6AFA1006DAC8E /* DRBooksBrowserViewController.m in Sources */,
+				EDD8E03614F6B76F00D809FC /* DRBookViewController.m in Sources */,
+				EDF71BE214F9504E007C2137 /* DRMainViewController.m in Sources */,
+				EDE36E6514FA6D5300FB62B2 /* CULoggingUtils.m in Sources */,
+				EDAAAD0C1503A88200DA117C /* DRImageScrollView.m in Sources */,
+				ED38A9C61503CF7A001E5654 /* DRBookScrollViewDataSource.m in Sources */,
+				EDD5FF451508E6AD00B4F478 /* DRScrollListView.m in Sources */,
+				ED80E81315308EC5006870B5 /* DRBooksBrowserService.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		ED84A29314EC23FF00BD76AE /* DRBooksBrowserViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ED84A29414EC23FF00BD76AE /* en */,
+			);
+			name = DRBooksBrowserViewController.xib;
+			sourceTree = "<group>";
+		};
+		EDD246AB14EA7ADA00B60A21 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EDD246AC14EA7ADA00B60A21 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		EDD246AD14EA7ADA00B60A21 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EDD246AE14EA7ADA00B60A21 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		EDD246B114EA7B7000B60A21 /* DRMainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EDD246B214EA7B7000B60A21 /* en */,
+			);
+			name = DRMainWindow.xib;
+			sourceTree = "<group>";
+		};
+		EDD246B414EA815B00B60A21 /* DRBookViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EDD246B514EA815B00B60A21 /* en */,
+			);
+			name = DRBookViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ED21991414E6C71A00CF25CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		ED21991514E6C71A00CF25CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ED21991714E6C71A00CF25CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DjvuViewer/DjvuViewer-Prefix.pch";
+				HEADER_SEARCH_PATHS = "./External/djvulibre-3.5.24/ios/build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				INFOPLIST_FILE = "DjvuViewer/DjvuViewer-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SDKROOT)/usr/lib/system\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		ED21991814E6C71A00CF25CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DjvuViewer/DjvuViewer-Prefix.pch";
+				HEADER_SEARCH_PATHS = "./External/djvulibre-3.5.24/ios/build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				INFOPLIST_FILE = "DjvuViewer/DjvuViewer-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SDKROOT)/usr/lib/system\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ED2198F214E6C71900CF25CD /* Build configuration list for PBXProject "DjvuViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED21991414E6C71A00CF25CD /* Debug */,
+				ED21991514E6C71A00CF25CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED21991614E6C71A00CF25CD /* Build configuration list for PBXNativeTarget "DjvuViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED21991714E6C71A00CF25CD /* Debug */,
+				ED21991814E6C71A00CF25CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EDE60D1E14ED6D56005E3BFA /* DRCachedBooks.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EDE60D1F14ED6D56005E3BFA /* DRCachedBooks.xcdatamodel */,
+			);
+			currentVersion = EDE60D1F14ED6D56005E3BFA /* DRCachedBooks.xcdatamodel */;
+			path = DRCachedBooks.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = ED2198EF14E6C71900CF25CD /* Project object */;
+}
