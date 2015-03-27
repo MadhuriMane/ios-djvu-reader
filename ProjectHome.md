@@ -1,0 +1,1 @@
+Simply DJVU reader for iPad
